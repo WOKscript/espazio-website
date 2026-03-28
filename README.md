@@ -69,6 +69,32 @@ open index.html
 npx serve .
 ```
 
+## Vercel Deployment
+
+This project can be deployed to Vercel as a static site with no build step.
+
+Dashboard deploy:
+
+1. Push this folder to GitHub.
+2. In Vercel, choose `Add New -> Project`.
+3. Import the repository.
+4. Keep the default static deployment settings.
+5. Deploy.
+
+CLI deploy:
+
+```bash
+npm install -g vercel
+vercel
+vercel --prod
+```
+
+Project notes:
+
+- Entry file: `index.html`
+- Static assets: `assets/`, `css/`, `js/`
+- Vercel config: `vercel.json`
+
 ## 📝 Customization
 
 - **Add real images:** Replace placeholder `<div>`s in the HTML with `<img>` tags pointing to your photos in `assets/images/`

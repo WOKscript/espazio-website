@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Espazio — A curated space celebrating the art, flavors, and heritage of Eastern Visayas in Tacloban City, Leyte." />
+  <meta name="keywords" content="Espazio, Tacloban, Leyte, coffee, pasta, arts, history, cafe, restaurant" />
+  <meta name="author" content="Espazio Tacloban" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Espazio — Arts + Food + History" />
+  <meta property="og:description" content="A curated space celebrating the art, flavors, and heritage of Eastern Visayas." />
+  <meta property="og:image" content="assets/images/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <title>Espazio — Arts + Food + History | Tacloban City</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Josefin+Sans:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript>
+    <style>
+      body.is-loading {
+        overflow: auto !important;
+      }
+
+      .page-loader {
+        display: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body class="is-loading">
+
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading Espazio">
+    <div class="page-loader-pattern"></div>
+    <div class="page-loader-content">
+      <img src="assets/images/logo.png" alt="Espazio" class="page-loader-logo" />
+      <p class="page-loader-title">Espazio</p>
+      <p class="page-loader-subtitle">Arts + Food + History</p>
+      <div class="page-loader-progress" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar">
+    <a href="#home">
+      <img src="assets/images/logo.png" alt="Espazio" class="nav-logo" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#pillars">Experience</a>
+      <a href="#menu">Menu</a>
+      <a href="#featured">Gallery</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact" class="nav-cta">Reserve</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <img src="assets/images/logo.png" alt="Espazio" class="hero-logo" />
+      <p class="hero-tagline">Tacloban City, Leyte</p>
+      <div class="hero-divider">
+        <hr /><span>Arts</span><hr /><span>Food</span><hr /><span>History</span><hr />
+      </div>
+      <h1 class="hero-title">Where Culture<br />Comes <em>Alive</em></h1>
+      <p class="hero-sub">
+        A curated space celebrating the art, flavors, and heritage of Eastern
+        Visayas — experience Tacloban like never before.
+      </p>
+      <a href="#menu" class="hero-btn">View Our Menu</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="about">
+      <div class="about-visual reveal">
+        <img src="assets/images/espazio-entrance.jpg" alt="Espazio counter and entrance with espazio signage" class="about-img" />
+        <div class="about-accent"></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">A Space for<br />Creative Souls</h2>
+        <p class="section-desc">
+          Espazio is more than a destination — it's a cultural haven in the
+          heart of Tacloban. A space for everyone, born from a passion for the
+          arts, a love for local flavors, and a deep respect for Waray heritage.
+          Winner of Tripadvisor Travellers' Choice Awards 2024 &amp; 2025 and
+          named Best Cafe in Tacloban City by Restaurant Guru 2025.
+        </p>
+        <div class="stats">
+          <div>
+            <div class="stat-num">Art</div>
+            <div class="stat-label">Exhibits &amp; Shows</div>
+          </div>
+          <div>
+            <div class="stat-num">Food</div>
+            <div class="stat-label">Local &amp; Fusion</div>
+          </div>
+          <div>
+            <div class="stat-num">History</div>
+            <div class="stat-label">Heritage &amp; Culture</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PILLARS ==================== -->
+  <section class="pillars-section" id="pillars">
+    <div class="pillars-header reveal">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Three Pillars of Espazio</h2>
+      <p class="section-desc">
+        Each visit is a journey through the creative soul, the culinary heart,
+        and the storied past of Tacloban.
+      </p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <div class="pillar-num">01</div>
+        <span class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+            <path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-.8 2-1.8 0-.5-.2-.9-.4-1.3-.3-.5-.4-.8-.4-1.2 0-1.3 1-2.2 2.3-2.2h1.2A4.5 4.5 0 0 0 21 10a7 7 0 0 0-7-7Z" />
+            <circle cx="7.5" cy="10" r="1" class="icon-fill" />
+            <circle cx="11" cy="7.5" r="1" class="icon-fill" />
+            <circle cx="8.5" cy="14" r="1" class="icon-fill" />
+          </svg>
+        </span>
+        <h3 class="pillar-name">Arts</h3>
+        <p class="pillar-desc">
+          Rotating exhibits from local and national artists, live performances,
+          workshops, and a creative residency program that nurtures Waray talent.
+        </p>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pillar-num">02</div>
+        <span class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+            <path d="M3 13h18" />
+            <path d="M5 13a7 7 0 0 1 14 0" />
+            <path d="M12 6V4" />
+            <path d="M7 18h10" />
+          </svg>
+        </span>
+        <h3 class="pillar-name">Food</h3>
+        <p class="pillar-desc">
+          A curated menu that honors traditional Leyteño recipes while embracing
+          modern culinary craft. Every dish tells a story of place and people.
+        </p>
+      </div>
+      <div class="pillar-card reveal">
+        <div class="pillar-num">03</div>
+        <span class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+            <path d="M12 4H7a4 4 0 0 0-4 4v11.5A2.5 2.5 0 0 1 5.5 17H12" />
+            <path d="M12 4h4.5A4.5 4.5 0 0 1 21 8.5V20" />
+            <path d="M12 4v16" />
+            <path d="M12 20h6.5a2.5 2.5 0 0 0 0-5H12" />
+            <path d="M7 8h2" />
+            <path d="M7 11h2" />
+          </svg>
+        </span>
+        <h3 class="pillar-name">History</h3>
+        <p class="pillar-desc">
+          Interactive heritage displays, curated archives, and storytelling
+          sessions that bring the rich and resilient history of Eastern Visayas
+          to life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MENU ==================== -->
+  <section class="menu-section" id="menu">
+    <div class="menu-inner">
+      <div class="menu-header reveal">
+        <p class="section-label">Our Menu</p>
+        <h2 class="section-title">Taste the Espazio Experience</h2>
+        <p class="section-desc">
+          From handcrafted coffee to hearty pasta and fresh frappes — every item
+          is made with love. Prices in PHP (₱).
+        </p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-tab="hot-drinks">Hot Drinks</button>
+        <button class="menu-tab" data-tab="iced-drinks">Iced Drinks</button>
+        <button class="menu-tab" data-tab="frappes">Frappes &amp; Smoothies</button>
+        <button class="menu-tab" data-tab="juices">Juices &amp; Soda</button>
+        <button class="menu-tab" data-tab="pasta">Pasta</button>
+        <button class="menu-tab" data-tab="snacks">Snacks</button>
+      </div>
+
+      <!-- ===== HOT DRINKS ===== -->
+      <div class="menu-panel active" id="panel-hot-drinks">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Coffee</h3>
+          <p class="menu-cat-subtitle">Freshly brewed &amp; crafted</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espresso</div></div><div class="menu-item-price">₱110</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espresso Macchiato</div></div><div class="menu-item-price">₱120</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Caffè Americano</div></div><div class="menu-item-price">₱125</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Cappuccino</div></div><div class="menu-item-price">₱135</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Caffè Latte</div></div><div class="menu-item-price">₱135</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Caffè Mocha</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Caramel Macchiato</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Vanilla Latte</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Hazelnut Latte</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">White Choco Mocha</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Spanish Latte</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Baileys Irish Caffè Latte</div></div><div class="menu-item-price">₱160</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Non Coffee</h3>
+          <p class="menu-cat-subtitle">Hot alternatives</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Hot Chocolate</div></div><div class="menu-item-price">₱145</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Matcha Tea Latte</div></div><div class="menu-item-price">₱150</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== ICED DRINKS ===== -->
+      <div class="menu-panel" id="panel-iced-drinks">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Iced Coffee</h3>
+          <p class="menu-cat-subtitle">Chilled &amp; refreshing</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Caffè Americano</div></div><div class="menu-item-price">₱130</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Cappuccino</div></div><div class="menu-item-price">₱140</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Caffè Latte</div></div><div class="menu-item-price">₱140</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Caffè Mocha</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Caramel Macchiato</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Vanilla Latte</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Hazelnut Latte</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced White Choco Mocha</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Butterscotch Latte</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Spanish Latte</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Blue Caramel Latte</div></div><div class="menu-item-price">₱165</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Coffee with Vanilla Cold Foam</div></div><div class="menu-item-price">₱170</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Iced Non Coffee</h3>
+          <p class="menu-cat-subtitle">Cool without the caffeine</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Chocolate</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Matcha Tea Latte</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Strawberry Matcha Latte</div></div><div class="menu-item-price">₱170</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== FRAPPES & SMOOTHIES ===== -->
+      <div class="menu-panel" id="panel-frappes">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Frappes</h3>
+          <p class="menu-cat-subtitle">Blended &amp; indulgent</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Matcha Frappe</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Caramel Frappe</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chocolate Frappe</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mocha Frappe</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">White Choco Frappe</div></div><div class="menu-item-price">₱150</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Vanilla Frappe</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Salted Caramel Frappe</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Coffee Crumble Frappe</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Oreo Butterscotch Frappe</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Ube Macapuno Frappe</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Cheesy Mango Frappe</div></div><div class="menu-item-price">₱160</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Smoothies</h3>
+          <p class="menu-cat-subtitle">Fruity &amp; creamy blends</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Strawberry</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Blueberry</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mixed Berry</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Strawberry Yogurt</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Blueberry Yogurt</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mixed Berry Yogurt</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Salted Caramel</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Creamy Oreo</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Strawberry Banana</div></div><div class="menu-item-price">₱165</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Banana Caramel</div></div><div class="menu-item-price">₱165</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mango Cheesecake</div></div><div class="menu-item-price">₱165</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== JUICES & SODA ===== -->
+      <div class="menu-panel" id="panel-juices">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Juices</h3>
+          <p class="menu-cat-subtitle">Fresh &amp; refreshing</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Blue Hawaiian</div></div><div class="menu-item-price">₱110</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Red Raspberry</div></div><div class="menu-item-price">₱110</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Pink Lemonade</div></div><div class="menu-item-price">₱110</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Lemon</div></div><div class="menu-item-price">₱135</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Orange</div></div><div class="menu-item-price">₱135</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Fruit Soda w/ Popping Boba</h3>
+          <p class="menu-cat-subtitle">Sparkling &amp; fun</p>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Sparkling Strawberry Soda</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Uplifting Lemon Soda</div></div><div class="menu-item-price">₱155</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Refreshing Blueberry Soda</div></div><div class="menu-item-price">₱155</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PASTA ===== -->
+      <div class="menu-panel" id="panel-pasta">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Pasta</h3>
+          <p class="menu-cat-subtitle">Handcrafted Italian-inspired dishes</p>
+          <div class="menu-grid single">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Classic Tomato Basil Pasta</div><div class="menu-item-desc">A simple yet flavorful spaghetti dish made with juicy tomato and fresh basil.</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Creamy Pesto Pasta</div><div class="menu-item-desc">A healthy pesto made of moringa and basil leaves, garlic, cream and olive oil.</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Milkfish w/ Olive &amp; Capers</div><div class="menu-item-desc">An oil-based pasta made of milkfish, capers and black olives.</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Spaghetti Aglio e Olio</div><div class="menu-item-desc">A simple Italian dish of garlic, olive oil, parsley, and Parmesan cheese.</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Tomato &amp; Garlic Pasta</div><div class="menu-item-desc">A simple yet flavorful pasta made of fresh tomatoes, garlic and olive oil.</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Creamy Tomato Pasta</div><div class="menu-item-desc">Spaghetti served with a sauce made of fresh tomatoes, cream and bacon bits.</div></div><div class="menu-item-price">₱230</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Creamy Mushroom Pasta</div><div class="menu-item-desc">A meat-free pasta bathed in a creamy sauce loaded with buttery mushrooms.</div></div><div class="menu-item-price">₱235</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Classic Carbonara</div><div class="menu-item-desc">A creamy pasta without using cream. Whole egg yolk, bacon bits and olive oil.</div></div><div class="menu-item-price">₱235</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Spaghetti Bolognaise</div><div class="menu-item-desc">A classic pasta using minced beef, fresh tomato, nutmeg &amp; red wine.</div></div><div class="menu-item-price">₱245</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Meatballs in Marinara Sauce</div><div class="menu-item-desc">Spaghetti with tender &amp; juicy meatballs smothered in a flavorful marinara sauce.</div></div><div class="menu-item-price">₱245</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Sausage &amp; Shrimp Pasta</div><div class="menu-item-desc">A flavorful pasta loaded with plump shrimps and slices of Hungarian sausage.</div></div><div class="menu-item-price">₱245</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chicken Puttanesca Pasta</div><div class="menu-item-desc">A chicken pasta flavored with aromatic anchovies, garlic, capers and olives.</div></div><div class="menu-item-price">₱275</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SNACKS ===== -->
+      <div class="menu-panel" id="panel-snacks">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Burgers</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Favorite Burger</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Bacon Cheeseburger</div></div><div class="menu-item-price">₱255</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Double Decker Burger</div></div><div class="menu-item-price">₱285</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Crispy Chicken Burger</div></div><div class="menu-item-price">₱220</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Espazio Filet-O-Fish Burger</div></div><div class="menu-item-price">₱230</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Sandwiches</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Japanese Egg Kani Sandwich</div></div><div class="menu-item-price">₱160</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chunky Apple Tuna Sandwich</div></div><div class="menu-item-price">₱175</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mayo Shredded Chicken Sandwich</div></div><div class="menu-item-price">₱175</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Soups</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Creamy Tomato Soup</div></div><div class="menu-item-price">₱185</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Butternut Squash Carrot Soup</div></div><div class="menu-item-price">₱185</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Salads</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Green Goddess Salad</div></div><div class="menu-item-price">₱195</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Fiddlehead Fern Salad (Pako)</div></div><div class="menu-item-price">₱195</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Greek Salad (Horiatiki)</div></div><div class="menu-item-price">₱245</div></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Sides</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Sweet Potato (Camote) Fries</div></div><div class="menu-item-price">₱120</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Nachos with Salsa / Cheese Sauce</div></div><div class="menu-item-price">₱185</div></div>
+            <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Banana Caramel Wraps with Ice Cream</div></div><div class="menu-item-price">₱185</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED ==================== -->
+  <section id="featured">
+    <div class="featured">
+      <div class="featured-header reveal">
+        <div>
+          <p class="section-label">Featured</p>
+          <h2 class="section-title">Moments at Espazio</h2>
+        </div>
+        <a href="#" class="hero-btn" style="font-size:.7rem;padding:.7rem 1.8rem;color:var(--red);border-color:var(--red);opacity:1;animation:none">View All</a>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-card reveal"><img src="assets/images/espazio-art-gallery.jpg" alt="Art gallery at Espazio" class="card-img" /><div class="card-overlay"><span class="card-cat">Art Exhibit</span><h3 class="card-title">Colors of Resilience:<br />A Waray Art Collection</h3></div></div>
+        <div class="featured-card reveal"><img src="assets/images/espazio-entrance.jpg" alt="Espazio counter and pastry display" class="card-img" /><div class="card-overlay"><span class="card-cat">Food</span><h3 class="card-title">Freshly Baked Delights</h3></div></div>
+        <div class="featured-card reveal"><img src="assets/images/espazio-history-wall.jpg" alt="Historical photos wall at Espazio" class="card-img" /><div class="card-overlay"><span class="card-cat">History</span><h3 class="card-title">The Leyte Landing Legacy</h3></div></div>
+        <div class="featured-card reveal"><img src="assets/images/espazio-garden.jpg" alt="Espazio outdoor garden with string lights" class="card-img" /><div class="card-overlay"><span class="card-cat">Events</span><h3 class="card-title">Garden Nights &amp; Live Music</h3></div></div>
+        <div class="featured-card reveal"><img src="assets/images/espazio-heritage-room.jpg" alt="Espazio heritage room with vintage items" class="card-img" /><div class="card-overlay"><span class="card-cat">Heritage</span><h3 class="card-title">Pieces of the Past</h3></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISIT & HOURS ==================== -->
+  <section class="visit-section" id="visit">
+    <div class="visit-inner">
+      <div class="reveal">
+        <p class="section-label">Visit Us</p>
+        <h2 class="section-title">Plan Your Visit</h2>
+        <p class="section-desc">
+          We're open six days a week in the heart of Tacloban City. Walk-ins are
+          welcome — reservations recommended for groups and events.
+        </p>
+        <div class="hours-table">
+          <div class="hours-row" data-day="1"><span class="day">Monday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row" data-day="2"><span class="day">Tuesday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row" data-day="3"><span class="day">Wednesday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row" data-day="4"><span class="day">Thursday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row" data-day="5"><span class="day">Friday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row" data-day="6"><span class="day">Saturday</span><span class="time">11:30 AM – 10:30 PM</span></div>
+          <div class="hours-row closed" data-day="0"><span class="day">Sunday</span><span class="time">CLOSED</span></div>
+        </div>
+      </div>
+      <div class="visit-info reveal">
+        <div class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+              <path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10Z" />
+              <circle cx="12" cy="11" r="2.5" class="icon-fill" />
+            </svg>
+          </div>
+          <h4>Location</h4>
+          <p>Tacloban City, Leyte<br />Eastern Visayas, Philippines</p>
+        </div>
+        <div class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+              <path d="M7 4h3l1 4-2 2a14 14 0 0 0 5 5l2-2 4 1v3a2 2 0 0 1-2 2A15 15 0 0 1 5 6a2 2 0 0 1 2-2Z" />
+            </svg>
+          </div>
+          <h4>Contact Us</h4>
+          <p>Call or text: <a href="tel:09972596809">0997 259 6809</a><br />Follow on <a href="https://www.facebook.com/espazio.tacloban" target="_blank" rel="noopener">Facebook</a> for updates.</p>
+        </div>
+        <div class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+              <path d="M8 4h8v3a4 4 0 0 1-8 0V4Z" />
+              <path d="M12 11v6" />
+              <path d="M9 20h6" />
+              <path d="M8 17h8" />
+              <path d="M16 5h3a2 2 0 0 1-2 4h-1" />
+              <path d="M8 5H5a2 2 0 0 0 2 4h1" />
+            </svg>
+          </div>
+          <h4>Awards</h4>
+          <p>Tripadvisor Travellers' Choice 2024 &amp; 2025<br />Best Cafe in Tacloban City — Restaurant Guru 2025</p>
+        </div>
+        <div class="visit-card">
+          <div class="visit-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon-svg" role="presentation">
+              <path d="M4 8a2 2 0 0 0 0 4v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4a2 2 0 0 1 0-4V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2Z" />
+              <path d="M9 8v8" />
+              <path d="M15 8v8" />
+            </svg>
+          </div>
+          <h4>Reservations &amp; Events</h4>
+          <p>Planning an event or private gathering? Message us on Facebook or call to reserve your space.</p>
+        </div>
+        <div class="visit-quote-img">
+          <img src="assets/images/espazio-quote-wall.jpg" alt="A generation which ignores history has no past and no future — Espazio wall quote" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta-section" id="contact">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal" style="max-width: 600px">Ready to Experience<br />Espazio?</h2>
+    <p class="section-desc reveal">
+      Whether you're planning a visit, booking an event, or just curious — we'd
+      love to hear from you.
+    </p>
+    <div class="cta-buttons reveal">
+      <a href="https://www.facebook.com/espazio.tacloban" target="_blank" rel="noopener" class="cta-btn cta-primary">Follow on Facebook</a>
+      <a href="#menu" class="cta-btn cta-secondary">View Full Menu</a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Espazio" class="footer-logo" />
+        <p>A curated space for arts, food, and history in the heart of Tacloban City, Leyte.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#about">About</a>
+        <a href="#pillars">Experience</a>
+        <a href="#menu">Menu</a>
+        <a href="#featured">Gallery</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://www.facebook.com/espazio.tacloban" target="_blank" rel="noopener">Facebook</a>
+        <a href="tel:09972596809">0997 259 6809</a>
+        <a href="#">Instagram</a>
+        <a href="#">Email Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <a href="#visit">Mon–Sat</a>
+        <a href="#visit">11:30 AM – 10:30 PM</a>
+        <a href="#visit">Closed Sundays</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Espazio Tacloban. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/espazio.tacloban" target="_blank" rel="noopener" title="Facebook">f</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="Email">@</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
