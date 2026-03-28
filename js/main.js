@@ -39,11 +39,12 @@ function initMobileNav() {
   const navLinks = document.getElementById("navLinks");
   if (!hamburger || !navLinks) return;
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    const spans = hamburger.querySelectorAll("span");
-    const isOpen = navLinks.classList.contains("open");
+  const spans = hamburger.querySelectorAll("span");
 
+  const setNavState = (isOpen) => {
+    navLinks.classList.toggle("open", isOpen);
+    document.body.classList.toggle("nav-open", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
     spans[0].style.transform = isOpen
       ? "rotate(45deg) translate(5px, 5px)"
       : "";
@@ -51,18 +52,26 @@ function initMobileNav() {
     spans[2].style.transform = isOpen
       ? "rotate(-45deg) translate(5px, -5px)"
       : "";
+  };
+
+  hamburger.setAttribute("aria-expanded", "false");
+
+  hamburger.addEventListener("click", () => {
+    const isOpen = !navLinks.classList.contains("open");
+    setNavState(isOpen);
   });
 
   // Close on link click
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      const spans = hamburger.querySelectorAll("span");
-      spans.forEach((s) => {
-        s.style.transform = "";
-        s.style.opacity = "1";
-      });
+      setNavState(false);
     });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 968 && navLinks.classList.contains("open")) {
+      setNavState(false);
+    }
   });
 }
 
