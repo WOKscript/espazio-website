@@ -105,8 +105,7 @@ section[id] {
 .page-loader-logo {
   width: 108px;
   height: 108px;
-  border-radius: 18px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  object-fit: contain;
 }
 
 .page-loader-title {
@@ -178,7 +177,7 @@ nav.scrolled {
 
 .nav-logo {
   height: 50px;
-  border-radius: 6px;
+  object-fit: contain;
   transition: transform 0.3s;
 }
 .nav-logo:hover {
@@ -302,9 +301,8 @@ nav.scrolled {
 .hero-logo {
   width: 140px;
   height: 140px;
-  border-radius: 16px;
   margin-bottom: 2rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
   animation: floatIn 1.2s ease-out;
 }
 
@@ -1161,7 +1159,7 @@ footer {
 
 .footer-logo {
   height: 45px;
-  border-radius: 6px;
+  object-fit: contain;
   margin-bottom: 0.5rem;
 }
 
@@ -1448,7 +1446,6 @@ footer {
   .page-loader-logo {
     width: 84px;
     height: 84px;
-    border-radius: 14px;
   }
   .page-loader-title {
     font-size: clamp(2rem, 10vw, 2.8rem);
@@ -1745,7 +1742,6 @@ footer {
     width: 76px;
     height: 76px;
     margin-bottom: 1rem;
-    border-radius: 12px;
   }
   .hero-tagline {
     font-size: 0.64rem;
