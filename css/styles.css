@@ -294,14 +294,23 @@ nav.scrolled {
   align-items: center;
   text-align: center;
   color: #fff;
-  width: min(100%, 900px);
+  width: min(100%, 860px);
   padding: 0;
 }
 
+.hero-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 1.6rem;
+}
+
 .hero-logo {
-  width: 140px;
-  height: 140px;
-  margin-bottom: 2rem;
+  width: clamp(140px, 18vw, 240px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  margin-bottom: 1.4rem;
   object-fit: contain;
   animation: floatIn 1.2s ease-out;
 }
@@ -312,7 +321,7 @@ nav.scrolled {
   font-size: 0.95rem;
   letter-spacing: 8px;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   opacity: 0;
   animation: fadeUp 0.8s ease-out 0.4s forwards;
 }
@@ -321,8 +330,8 @@ nav.scrolled {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
   font-size: clamp(2.8rem, 7vw, 5.5rem);
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  line-height: 1.04;
+  margin-bottom: 1.1rem;
   opacity: 0;
   animation: fadeUp 0.8s ease-out 0.6s forwards;
 }
@@ -337,8 +346,8 @@ nav.scrolled {
   font-weight: 400;
   font-size: 1.05rem;
   line-height: 1.8;
-  max-width: 550px;
-  margin: 0 auto 2.5rem;
+  max-width: 590px;
+  margin: 0 auto 2rem;
   opacity: 0;
   animation: fadeUp 0.8s ease-out 0.8s forwards;
 }
@@ -348,7 +357,7 @@ nav.scrolled {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
   opacity: 0;
   animation: fadeUp 0.8s ease-out 0.7s forwards;
 }
@@ -747,7 +756,8 @@ section {
 .menu-item {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 0.65rem 0;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.08);
   transition: all 0.25s;
@@ -766,6 +776,7 @@ section {
   font-family: "Lora", serif;
   font-size: 0.92rem;
   color: var(--text);
+  overflow-wrap: anywhere;
 }
 
 .menu-item-desc {
@@ -773,6 +784,7 @@ section {
   color: var(--muted);
   margin-top: 0.15rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .menu-item-price {
@@ -781,9 +793,10 @@ section {
   font-size: 0.82rem;
   color: var(--red);
   white-space: nowrap;
-  margin-left: 1rem;
+  margin-left: 0;
   min-width: 42px;
   text-align: right;
+  align-self: flex-start;
 }
 
 /* Single column for items with descriptions */
@@ -792,6 +805,15 @@ section {
 }
 .menu-grid.single .menu-item {
   max-width: 650px;
+}
+
+.menu-grid-detailed {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+}
+
+.menu-grid-detailed .menu-item {
+  max-width: none;
 }
 
 /* ---------- FEATURED ---------- */
@@ -1457,19 +1479,20 @@ footer {
   .hero {
     padding: 6.5rem 1.25rem 3.75rem;
   }
+  .hero-brand {
+    margin-bottom: 1.15rem;
+  }
   .hero-logo {
-    width: 88px;
-    height: 88px;
-    margin-bottom: 1.2rem;
+    width: clamp(108px, 24vw, 156px);
+    margin-bottom: 1rem;
   }
   .hero-tagline {
     font-size: 0.7rem;
     letter-spacing: 4px;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.7rem;
   }
   .hero-divider {
     gap: 0.65rem;
-    margin-bottom: 1.2rem;
   }
   .hero-divider hr {
     width: 24px;
@@ -1553,8 +1576,12 @@ footer {
   .menu-grid {
     gap: 0 2rem;
   }
-  .menu-grid.single .menu-item {
+  .menu-grid.single .menu-item,
+  .menu-grid-detailed .menu-item {
     max-width: none;
+  }
+  .menu-grid-detailed {
+    gap: 0 2rem;
   }
   .menu-cat-title {
     font-size: 1.4rem;
@@ -1619,19 +1646,20 @@ footer {
   .hero-content {
     width: min(100%, 700px);
   }
+  .hero-brand {
+    margin-bottom: 1.05rem;
+  }
   .hero-logo {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 1.1rem;
+    width: clamp(118px, 14vw, 170px);
+    margin-bottom: 0.95rem;
   }
   .hero-tagline {
     font-size: 0.76rem;
     letter-spacing: 5px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.65rem;
   }
   .hero-divider {
     gap: 0.8rem;
-    margin-bottom: 1.25rem;
   }
   .hero-divider hr {
     width: 28px;
@@ -1672,18 +1700,17 @@ footer {
   .hero-content {
     width: min(100%, 640px);
   }
-  .hero-logo {
-    width: 84px;
-    height: 84px;
+  .hero-brand {
     margin-bottom: 0.9rem;
+  }
+  .hero-logo {
+    width: clamp(104px, 12vw, 140px);
+    margin-bottom: 0.8rem;
   }
   .hero-tagline {
     font-size: 0.72rem;
     letter-spacing: 4px;
-    margin-bottom: 0.7rem;
-  }
-  .hero-divider {
-    margin-bottom: 1rem;
+    margin-bottom: 0.55rem;
   }
   .hero-title {
     font-size: clamp(2.2rem, 4.3vw, 3.45rem);
@@ -1738,18 +1765,20 @@ footer {
   .hero {
     padding: 6.15rem 1rem 3rem;
   }
-  .hero-logo {
-    width: 76px;
-    height: 76px;
+  .hero-brand {
     margin-bottom: 1rem;
+  }
+  .hero-logo {
+    width: clamp(96px, 30vw, 138px);
+    margin-bottom: 0.85rem;
   }
   .hero-tagline {
     font-size: 0.64rem;
     letter-spacing: 3px;
+    margin-bottom: 0.6rem;
   }
   .hero-divider {
     gap: 0.45rem;
-    margin-bottom: 1rem;
   }
   .hero-divider hr {
     width: 16px;
@@ -1832,6 +1861,10 @@ footer {
   .menu-item {
     align-items: flex-start;
     gap: 0.75rem;
+  }
+  .menu-grid-detailed {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
   .menu-item-name {
     font-size: 0.88rem;
